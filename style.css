@@ -1,0 +1,175 @@
+/* Estilos generales */
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Encabezado */
+header {
+  background-color: #bbbbbb;
+  padding: 20px 0;
+}
+
+.caja {
+  width: 940px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.caja img{
+  width: 120px;}
+
+/* Banners */
+.banner {
+  width: 100%;
+}
+
+/* Logo */
+h1 {
+  margin: 0;
+}
+
+h1 img {
+  margin-right: 10px;
+}
+
+/* Navegación */
+nav {
+  margin-top: 10px;
+  position: absolute;
+  top: 80px;
+  right: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Alinea la lista verticalmente */
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Enlaces de navegación */
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+/* Efecto hover */
+a:hover {
+  color: #00f;
+}
+
+nav a:hover {
+  color: #c78c19;
+  text-decoration: underline;
+}
+
+/* Contenido principal */
+.principal {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Títulos */
+.titulo-principal {
+  text-align: center;
+  font-size: 2em;
+  margin: 0 0 1em;
+  clear: left;
+}
+
+p {
+  margin: 0 0 1em;
+  font-size: 1.2em;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+.diferenciales {
+  padding: 3em 0;
+  background: #888888;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  background: url(../imagenes/bg.jpg);
+  padding: 10px;
+}
+
+footer .copyright {
+  color: #fff;
+  font-size: 13px;
+  margin: 10px;
+}
+
+footer img {
+  width: 40px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 980px) {
+  .caja {
+    width: 100%;
+    padding: 10px;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 img {
+    margin: 0;
+  }
+
+  nav {
+    position: static;
+    text-align: center;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    display: block;
+    margin: 0;
+  }
+
+  nav a {
+    font-size: 24px; /* Ajusta el tamaño de fuente según tus preferencias */
+    margin: 10px 0;
+  }
+
+  /* Estilos responsivos para títulos */
+  h2.titulo-principal,
+  h3.titulo-principal {
+    font-size: 1.5em !important; /* Ajusta el tamaño de fuente según tus preferencias */
+    text-align: center !important;/* Centra el texto en la vista responsiva */
+    margin: 0 !important;/* Elimina cualquier margen adicional */
+  }
+}
