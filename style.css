@@ -108,6 +108,13 @@ em {
   font-style: italic;
 }
 
+/* Otras secciones */
+.sabemos {
+  width: 120px;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
 .diferenciales {
   padding: 3em 0;
   background: #888888;
