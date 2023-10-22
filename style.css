@@ -82,7 +82,8 @@ nav a:hover {
 }
 
 /* Contenido principal */
-.principal {
+.principal,
+.mapa-contenido {
   width: 100%;
   margin: 0 auto;
 }
@@ -113,6 +114,16 @@ em {
   width: 120px;
   float: left;
   margin: 0 20px 20px 0;
+}
+
+.mapa {
+  padding: 3em 0;
+  background: linear-gradient(#fefefe, #888888);
+}
+
+.mapa p {
+  margin: 0 0 2em;
+  text-align: center;
 }
 
 .diferenciales {
