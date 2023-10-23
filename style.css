@@ -20,8 +20,9 @@ header {
 .caja img{
   width: 120px;}
 
-/* Banners */
-.banner {
+/* Imágenes y banners */
+.banner,
+.imagen-diferenciales {
   width: 100%;
 }
 
@@ -37,8 +38,6 @@ h1 img {
 /* Navegación */
 nav {
   margin-top: 10px;
-  position: absolute;
-  top: 80px;
   right: 0;
 }
 
@@ -50,13 +49,25 @@ ul {
 }
 
 li {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 /* Enlaces de navegación */
 a {
   text-decoration: none;
   color: #000;
+}
+
+/* Efecto hover */
+a:hover {
+  color: #00f;
+}
+
+/* Navegación */
+nav {
+  position: absolute;
+  top: 10px;
+  right: 0;
 }
 
 nav li {
@@ -69,11 +80,7 @@ nav a {
   color: #000000;
   font-weight: bold;
   font-size: 22px;
-}
-
-/* Efecto hover */
-a:hover {
-  color: #00f;
+  text-decoration: none;
 }
 
 nav a:hover {
@@ -82,8 +89,10 @@ nav a:hover {
 }
 
 /* Contenido principal */
-.principal {
-  width: 100%;
+.principal,
+.mapa-contenido,
+.contenido-diferenciales {
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -115,10 +124,60 @@ em {
   margin: 0 20px 20px 0;
 }
 
+.mapa {
+  padding: 3em 0;
+  background: linear-gradient(#fefefe, #888888);
+}
+
+.mapa p {
+  margin: 0 0 2em;
+  text-align: center;
+}
+
 .diferenciales {
   padding: 3em 0;
   background: #888888;
 }
+
+.contenido-diferenciales {
+  width: 840px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.lista-diferenciales {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.items {
+  line-height: 1.5;
+  display: flex;
+    align-items: center;
+}
+
+.items:before {
+  content: "✯";
+}
+
+.items:first-child {
+  font-weight: bold;
+}
+
+/* Efectos en imágenes */
+.imagen-diferenciales {
+  width: 60%;
+  float: right;
+  transition: 0.4s;
+  box-shadow: 10px 10px 25px 10px #000000;
+}
+
+.imagen-diferenciales:hover {
+  opacity: 0.3;
+}
+
 
 /* Pie de página */
 footer {
@@ -151,6 +210,14 @@ footer img {
     margin: 0;
   }
 
+  ul {
+      display: list-item;
+      text-align: center;
+    }
+  li.items {
+     font-size: xx-large;
+  }
+
   nav {
     position: static;
     text-align: center;
@@ -170,6 +237,23 @@ footer img {
   nav a {
     font-size: 24px; /* Ajusta el tamaño de fuente según tus preferencias */
     margin: 10px 0;
+  }
+
+  .principal,
+  .mapa-contenido,
+  .contenido-diferenciales{
+    width: auto;
+  }
+
+  .lista-diferenciales,
+  .imagen-diferenciales{
+      width: 100%;
+    }
+
+  .productos li {
+      display: block;
+      text-align: center;
+      width: 100%;
   }
 
   /* Estilos responsivos para títulos */
