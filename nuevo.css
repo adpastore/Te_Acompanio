@@ -1,0 +1,154 @@
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+}
+/* header {
+    background-color: violet;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    height: 60px;
+    margin: 0;
+}
+header div.contenedor {
+    place-content: flex-start;    
+}
+header div.contenedor nav {
+    width: 70%;
+    display: flex;
+    place-content: space-between;
+
+} */
+/* Color de fondo de pagina:#EDDCC1;
+Color del texto: black;
+Color Encabezado:violet;
+Color Barra navegacion: gris; */
+
+:root {
+    /*color fondo de pagina*/
+    --color-page: #EDDCC1;
+
+    /*Color barra superior*/
+    --color-barra: violet;
+
+    /*Color de texto*/
+
+    --color-texto: black;
+
+    /*Color barra desplazamiento*/
+
+    --color-barralateral:grey;
+
+    /*Color Boton */
+
+    --color-boton: green;
+
+    /*Color letra-navegacion*/
+
+    --color-let-nav: white;
+
+
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--color-page);
+    color: var(--color-texto);
+    margin: 0;
+}
+a {
+    color: var(--color-texto);
+    text-decoration: none;
+}
+a.actual {
+    font-weight: bold;
+}
+/* .nav {
+    justify-content: space-between;
+} */
+/* nav ul li a.actual {
+    text-decoration: none;
+    display: flex;
+    margin-left: auto;
+} */
+header {
+    margin-top: 0;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-texto);
+    height: 2em;
+}
+
+.logo img {
+    justify-content: flex-start;
+    height: 4em;
+}
+.logo p {
+    font-family: 'Playball', cursive;
+    font-size: 1.5em;
+}
+
+.contenedor {
+    background-color: var(--color-barra);
+    color: var(--color-texto);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header ul, footer ul, #nosotros ul {
+    list-style-type: none;
+    margin: o;
+    padding: 0;
+}
+header ul, footer ul {
+    display: flex;
+    place-content: space-between;
+}
+header ul {
+    font-size: .9em;
+    margin-right: 5px;
+}
+
+main {
+    background-color: var(--color-page);
+
+}
+footer {
+    background-color: var(--color-barra);
+}
+footer ul {
+    margin-bottom: 0;
+}
+
+.boton-principal {
+    background: var(--color-boton);
+    color: var(--color-let-nav);
+    border: 3px solid var(--color-boton);
+    border-radius: 5em;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: .5em 1.1em;
+    display: inline-block
+}
+.boton-principal:hover {
+    color:var(--color-boton);
+    background: var(--color-let-nav);
+}
+#contenedor, main, aside, footer {
+    padding: 1em;
+}
+#nosotros li img {
+    width: 10em;
+    height: 10em;
+}
+
+
+
+
+
