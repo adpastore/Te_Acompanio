@@ -1,3 +1,9 @@
+:root {
+  --bordeForm: #007BFF;
+  --botones: #4CAF50;
+  --span: #ff4500;
+}
+
 /* Estilos generales */
 body {
   font-family: "Inter", sans-serif;
@@ -264,3 +270,175 @@ footer img {
     margin: 0 !important;/* Elimina cualquier margen adicional */
   }
 }
+
+/* Contenedor principal pagina contacto */
+
+.container-contact {
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.span-contact{
+    color: var(--span);
+}
+
+/* Formulario y contenido centrado */
+.cuerpo-contact {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 30px;
+  }
+  
+/*  Formulario */
+form {
+    flex: 30%;
+    width: 100%;
+    padding: 20px;
+}
+
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid var(--bordeForm);
+  border-radius: 4px;
+  font-size: 14px;
+}
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+/* Botón enviar */
+button[type="submit"] {
+  background-color: var(--botones);
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.4s ease;
+}
+button[type="submit"]:hover {
+  background-color: #308534;
+}
+
+/* check-box  */
+.fiel{
+    display: flex;
+    flex: 40%;
+    width: 100%;
+    padding: 20px;    
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+fieldset {
+  width: 60%;
+  border: 2px solid var(--bordeForm);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* boton select */
+#miSelect {
+  width: 150px; /* Ancho deseado */
+  padding: 10px; /* Espacio interior */
+  font-size: 14px; /* Tamaño de fuente */
+  color: #333; /* Color de texto */
+  background-color: #f7f7f7; /* Color de fondo */
+  border: 1px solid #ddd; /* Borde */
+  border-radius: 5px; /* Radio del borde */
+}
+
+#miSelect:hover {
+  border-color: var(--botones); /* Color del borde al pasar el mouse */
+}
+
+#miSelect:focus {
+  outline: none; /* Eliminar el contorno al enfocar el select */
+  border-color: #66afe9; /* Color del borde al estar enfocado */
+  box-shadow: 0 0 5px rgba(102, 175, 233, 0.6); /* Sombra al estar enfocado */
+}
+  
+/* checkbox */
+legend{
+  font-weight: bold;
+}
+.slider-checkbox {
+  display: none;
+}
+
+.slider-label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  width: 50px; /* Ancho del área deslizante */
+  height: 25px; /* Altura del área deslizante */
+  background-color: #ccc;
+  border-radius: 25px; /* Hacerlo circular */
+  transition: background-color 0.3s;
+}
+
+.slider-checkbox:checked + .slider-label {
+  background-color: #4CAF50; /* Cambiar el color de fondo cuando está seleccionado */
+}
+
+.slider-label::before {
+  content: "";
+  position: absolute;
+  width: 21px; /* Ancho del círculo deslizante */
+  height: 21px; /* Altura del círculo deslizante */
+  border-radius: 50%;
+  background-color: white;
+  left: 4px; /* Posición inicial del círculo deslizante */
+  transition: left 0.3s;
+}
+
+.slider-checkbox:checked + .slider-label::before {
+  left: 25px; /* Posición final del círculo deslizante cuando está seleccionado */
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkbox-text {
+  margin-left: 15px; /* Espacio entre el checkbox y el texto */
+  color: var(--span);
+}
+  
+@media only screen and (max-width: 650px){
+    .cuerpo-contact {
+      flex-direction: column;
+    }
+    form {
+      /* flex: 30%; */
+      width: 70%;
+      padding: 0;
+  }
+}
+/* Fin estilo pagina contacto*/
