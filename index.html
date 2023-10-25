@@ -2,100 +2,113 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <!--meta de adaptacion a celulares-->
-  <meta name="viewport" content="width=device-width">
-  <title>TE ACOMPAÑO</title>
+    <meta charset="UTF-8">
+    <!--meta de adaptacion a celulares-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <title>Te Acompaño...</title>
     <!--Reseteo de estilos predefinidos -->
-  <link rel="stylesheet" href="../Te_Acompaño/reset.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Montserrat:wght@300&display=swap"
-    rel="stylesheet">
-    <script src="prefixfree.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!--  <link rel="stylesheet" href="../Te_Acompaño/reset.css">-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nuevo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Montserrat:wght@300&display=swap"
+      rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <!--<script src="prefixfree.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">-->
+    <link rel="stylesheet" href="/nuevo.css">
+    <link rel="icon" href="/imagenes1/favicon.png" type="image/x-icon">
 </head>
 
 <body>
-  <header>
-    <div class="caja">
-      <h1><img src="imagenes/logo.png" alt="logo"></h1>
+<header>
+
+    <div class="contenedor">
+        <a class="logo">
+            <img src="/imagenes1/Logo.png" alt="Logo Te Acompaño" class="src">
+            <p>Te acompaño...</p>
+        </a>
+
         <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a <!--href="porque.html-->">Por qué  Te acompaño?</a></li>
-            <li><a <!--href="puntoPartida.html-->">Punto de partida</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nuevo.html">Nuevo</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </div>
-  </header>
-    <img class="banner" src="banner/banner.jpeg" alt="Te acompaño">
+</header>
 
-    <main>
-        <section class="principal">
-            <h2 class="titulo-principal">Por qué  Te acompaño?</h2>
+<img class="banner" src="banner/banner.jpeg" alt="Te acompaño">
 
-            <img class="sabemos" src="imagenes/TeAcompanio.jpeg" alt="Te acompaño">
-            <p> Porque sabemos que con las herramientas  y  conocimientos adecuados podemos hacer la diferencia en las
-                trayectorias educativas de nuestros alumnos y alumnas potenciando su habilidades personales..</p>
-            <!-- em destaca con énfasis el texto, luego lo usaremos en el css para cambiar el color-->
-            <p id="mision"><em>Nuestra misión es:<strong> "Proporcionar autoestima y calidad de vida a nuestros
-                alumnos".</strong></em>
-            </p>
-            <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el
-                mundo de la educación, para así ofrecer las últimas tendencias. Nuestro acompañamiento posee un
-                padrón de excelencia y agilidad, garantizando la calidad y satisfacción de nuestros alumnos.
-            </p>
-        </section>
+<main>
+    <section class="principal">
+        <h2 class="titulo-principal">Por qué  Te acompaño?</h2>
 
-        <section class="mapa">
-            <h3 class="titulo-principal">Nuestra ubicación</h3>
-            <p>Nuestra institución está ubicada en el centro de la ciudad</p>
+        <img class="sabemos" src="imagenes/TeAcompanio.jpeg" alt="Te acompaño">
+        <p> Porque sabemos que con las herramientas  y  conocimientos adecuados podemos hacer la diferencia en las
+            trayectorias educativas de nuestros alumnos y alumnas potenciando su habilidades personales..</p>
+        <!-- em destaca con énfasis el texto, luego lo usaremos en el css para cambiar el color-->
+        <p id="mision"><em>Nuestra misión es:<strong> "Proporcionar autoestima y calidad de vida a nuestros
+            alumnos".</strong></em>
+        </p>
+        <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el
+            mundo de la educación, para así ofrecer las últimas tendencias. Nuestro acompañamiento posee un
+            padrón de excelencia y agilidad, garantizando la calidad y satisfacción de nuestros alumnos.
+        </p>
+    </section>
 
-            <div class="mapa-contenido">
-                <iframe title="mapa"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.0048670708958!2d-58.384092247822885!3d-34.603669214177195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac5e6428d01%3A0x756637d26607a1ff!2sAv.%20Corrientes%201249%2C%20C1043AAM%20CABA!5e0!3m2!1ses-419!2sar!4v1697666980674!5m2!1ses-419!2sar"
-                        width="100%" height="300" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+    <section class="diferenciales">
+        <h3 class="titulo-principal">Nuestros objetivos</h3>
+        <div class="contenido-diferenciales">
+            <ul class="lista-diferenciales">
+                <li class="items">Elaborar proyectos interdisciplinarios .</li>
+                <li class="items">------------------------------</li>
+                <li class="items">Asesorar a instituciones educativas.</li>
+                <li class="items">------------------------------</li>
+                <li class="items">Ofrecer espacios de contención para las familias.</li>
+                <li class="items">------------------------------</li>
+                <li class="items">Profesionales Calificados</li>
+                <li class="items">------------------------------</li>
+                <li class="items">Brindar la atención de profesionales idóneos en el campo educativo y de la salud.</li>
+                <li class="items">------------------------------</li>
+                <li class="items">Acompañar a niños,niñas y adolescentes .</li>
+            </ul>
+            <img class="imagen-diferenciales" src="diferenciales/diferenciales.jpg" alt="diferenciales">
+        </div>
 
-        </section>
+        <div class="video">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/H9U6J0C8z88?si=E4FTF4Mh7p9Z4cLm"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+        </div>
 
-        <section class="diferenciales">
-            <h3 class="titulo-principal">Nuestros objetivos</h3>
-            <div class="contenido-diferenciales">
-                <ul class="lista-diferenciales">
-                    <li class="items">Elaborar proyectos interdisciplinarios .</li>
-                    <li class="items">------------------------------</li>
-                    <li class="items">Asesorar a instituciones educativas.</li>
-                    <li class="items">------------------------------</li>
-                    <li class="items">Ofrecer espacios de contención para las familias.</li>
-                    <li class="items">------------------------------</li>
-                    <li class="items">Profesionales Calificados</li>
-                    <li class="items">------------------------------</li>
-                    <li class="items">Brindar la atención de profesionales idóneos en el campo educativo y de la salud.</li>
-                    <li class="items">------------------------------</li>
-                    <li class="items">Acompañar a niños,niñas y adolescentes .</li>
-                </ul>
-                <img src="diferenciales/diferenciales.jpg" alt="diferenciales" class="imagen-diferenciales">
-            </div>
+    </section>
 
-            <div class="video">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/H9U6J0C8z88?si=E4FTF4Mh7p9Z4cLm"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-            </div>
+    <section class="mapa">
+        <h3 class="titulo-principal">Nuestra ubicación</h3>
+        <p>Nuestra institución está ubicada en el centro de la ciudad</p>
 
-        </section>
-    </main>
+        <div class="mapa-contenido">
+            <iframe title="mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.0048670708958!2d-58.384092247822885!3d-34.603669214177195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac5e6428d01%3A0x756637d26607a1ff!2sAv.%20Corrientes%201249%2C%20C1043AAM%20CABA!5e0!3m2!1ses-419!2sar!4v1697666980674!5m2!1ses-419!2sar"
+                    width="100%" height="300" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
 
-    <footer>
-          <img src="./imagenes/logo.png" alt="Logo">
-        <p class="copyright">&copy; Copyright Te Acompaño - 2023</p>
-    </footer>
-  </body>
+    </section>
+</main>
+<footer>
+    <ul>
+        <li><a>&copy; Te Acompaño,  2023</a></li>
+        <li><a>Aviso legal</a></li>
+    </ul>
+
+</footer>
+
 </html>
