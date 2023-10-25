@@ -1,33 +1,110 @@
+
 :root {
-  --bordeForm: #007BFF;
-  --botones: #4CAF50;
-  --span: #ff4500;
+   /* Lineas pagina contactos */
+    --bordeForm: #007BFF;
+    --botones: #4CAF50;
+
+  /*color fondo de pagina*/
+      --color-page: #EDD-CC;
+
+      /*Color barra superior*/
+      --color-barra: violet;
+
+      /*Color de texto*/
+
+      --color-texto: black;
+
+      /*Color barra desplazamiento*/
+
+      --color-barralateral:grey;
+
+      /*Color Boton */
+
+      --color-boton: green;
+
+      /*Color letra-navegacion*/
+
+      --color-let-nav: white;
 }
 
 /* Estilos generales */
-body {
+/*body {
   font-family: "Inter", sans-serif;
+}*/
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--color-page);
+    color: var(--color-texto);
+    margin: 0;
+}
+a {
+    color: var(--color-texto);
+    text-decoration: none;
+}
+a.actual {
+    font-weight: bold;
 }
 
-/* Encabezado */
 header {
-  background-color: #bbbbbb;
-  padding: 20px 0;
+    margin-top: 0;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-texto);
+    height: 2em;
 }
 
-.caja {
-  width: 940px;
-  position: relative;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
+.logo img {
+    justify-content: flex-start;
+    height: 4em;
+}
+.logo p {
+    font-family: 'Playball', cursive;
+    font-size: 1.5em;
 }
 
-.caja img{
-  width: 120px;}
+.contenedor {
+    background-color: var(--color-barra);
+    color: var(--color-texto);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header ul, footer ul, #nosotros ul {
+    list-style-type: none;
+    margin: o;
+    padding: 0;
+}
+header ul, footer ul {
+    display: flex;
+    place-content: space-between;
+}
+header ul {
+    font-size: .9em;
+    margin-right: 5px;
+}
+
+
+main {
+    background-color: var(--color-page);
+
+}
+footer {
+    background-color: var(--color-barra);
+}
+footer ul {
+    margin-bottom: 0;
+}
+
+
 
 /* Imágenes y banners */
-.banner,
+.banner{
+  width: 100%;
+}
 .imagen-diferenciales {
   width: 100%;
 }
@@ -41,28 +118,6 @@ h1 img {
   margin-right: 10px;
 }
 
-/* Navegación */
-nav {
-  margin-top: 10px;
-  right: 0;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-direction: column; /* Alinea la lista verticalmente */
-}
-
-li {
-  margin-bottom: 0px;
-}
-
-/* Enlaces de navegación */
-a {
-  text-decoration: none;
-  color: #000;
-}
 
 /* Efecto hover */
 a:hover {
@@ -70,23 +125,19 @@ a:hover {
 }
 
 /* Navegación */
-nav {
+/*nav {
   position: absolute;
   top: 10px;
   right: 0;
 }
-
+*/
 nav li {
   display: inline;
   margin: 0 15px;
+  font-weight: bold;
+   font-size: 16px
 }
 
-nav a {
-  text-transform: uppercase;
-  color: #000000;
-  font-weight: bold;
-  font-size: 22px;
-  text-decoration: none;
 }
 
 nav a:hover {
@@ -110,10 +161,6 @@ nav a:hover {
   clear: left;
 }
 
-p {
-  margin: 0 0 1em;
-  font-size: 1.2em;
-}
 
 strong {
   font-weight: bold;
@@ -142,7 +189,7 @@ em {
 
 .diferenciales {
   padding: 3em 0;
-  background: #888888;
+/*  background: #888888;*/
 }
 
 .contenido-diferenciales {
@@ -174,7 +221,7 @@ em {
 
 /* Efectos en imágenes */
 .imagen-diferenciales {
-  width: 60%;
+  width: 40%;
   float: right;
   transition: 0.4s;
   box-shadow: 10px 10px 25px 10px #000000;
@@ -190,23 +237,22 @@ em {
 }
 
 /* Pie de página */
+
 footer {
-  text-align: center;
-  background: url(../imagenes/bg.jpg);
-  padding: 10px;
+    background-color: var(--color-barra);
+}
+footer ul {
+    margin-bottom: 0;
 }
 
-footer .copyright {
-  color: #fff;
-  font-size: 13px;
-  margin: 10px;
-}
-
-footer img {
-  width: 40px;
-}
 
 /* Contenedor principal pagina contacto */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+}
+
 .container-contact {
   margin: 0 auto;
   background-color: #fff;
@@ -366,7 +412,7 @@ legend{
   }
   /* Fin estilo pagina contacto*/
 
-/* Media Queries */
+/* Media Queries --------------------------------------------------------*/
 @media screen and (max-width: 980px) {
   .caja {
     width: 100%;
