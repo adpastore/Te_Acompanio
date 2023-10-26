@@ -101,9 +101,15 @@ header {
     font-family: 'Playball', cursive;
     font-size: 1.8em;
 }
+nav a.actual:hover {
+    color:var(--color-texto)
+}
+nav a:hover {
+    color: var(--color-let-nav);
+}
 
 
-header ul, footer ul, #nosotros ul {
+header ul, footer ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -283,6 +289,12 @@ footer ul {
         margin-top: .6em;
     
     }
+    nav a.actual:hover {
+        color:var(--color-let-nav);
+    }
+    nav a:hover {
+        color: var(--color-texto);
+    }
     a {
         font-size: 1.2em;
         color: var(--color-let-nav);
@@ -290,9 +302,7 @@ footer ul {
         margin-right: .5em;
         
     }
-    a.actual {
-        color: black;
-    }
+
     .main {
         grid-template-columns: 1fr;
         cont1, .cont2 {
