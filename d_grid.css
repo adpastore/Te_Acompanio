@@ -120,8 +120,8 @@ header ul {
     grid-template-columns: 1fr 1fr;
     /* align-items: center;    */
     background-color: lightslategrey;
-    grid-gap: 2rem;
-    padding: 2rem;
+    grid-gap: 4rem;
+    padding: 1.5rem;
     z-index: 555;
 } 
 .main .cont1 {
@@ -131,8 +131,8 @@ header ul {
     border-color: blueviolet;
     border-style: solid;/*sacar par no ver los bordes*/
     border-radius: 1em;
-    padding-top: 3em;
-    padding-bottom: 3em;
+    padding-top: 2em;
+    padding-bottom: 2em;
     background-color:var(--color-barra);
     z-index: 9998;
     
@@ -181,6 +181,12 @@ footer {
 }
 footer ul {
     margin-bottom: 0;
+}
+footer ul li a{
+    font-size: 1.1em;
+}
+footer ul li {
+    font-size: 1em;
 }
 
 .boton-principal {
@@ -309,7 +315,6 @@ footer ul {
                     height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
             }
     }
-}
 
     @media only screen and (max-width: 770px) {   
 
@@ -328,20 +333,42 @@ footer ul {
         max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
         height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
         }
+        #leyenda {
+            display: none;
+        }
     }
 }
+
+
 
 .nosotros {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4em;
+        margin-left: 3em;
+    margin-right: 3em;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    background-color: var(--color-alt);
     }
 .nosotros .tarjeta {
         display: grid;
-        border-radius: 1rem;
+        border-radius: 15rem;
         box-shadow: rgba(0, 0, 0, 0.08) 0 0 2rem;
-        /* grid-column-end: span 4; */
+        background-color: lightgreen;
         padding: 2rem;
+        justify-items: center;
       }
+.nosotros .tarjeta img {
+    width: 80%;
+    height: auto;
+    border-radius: 15em;
+}
+     
+blockquote {
+    display: block;
+    text-align: center;
+}
 
 
       
