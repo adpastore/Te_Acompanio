@@ -124,7 +124,7 @@ header ul {
 }
 
 
-main {
+.main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* align-items: center;    */
@@ -133,7 +133,7 @@ main {
     padding: 2rem;
     z-index: 555;
 } 
-main .cont1 {
+.main .cont1 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -147,7 +147,7 @@ main .cont1 {
     
 
 }
-main .cont2 {
+.main .cont2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -342,5 +342,17 @@ footer ul {
       }
     }
 }
+.nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.nosotros .tarjeta {
+        display: grid;
+        border-radius: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.08) 0 0 2rem;
+        /* grid-column-end: span 4; */
+        padding: 2rem;
+      }
+
 
       
