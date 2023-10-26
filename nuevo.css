@@ -1,31 +1,4 @@
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 10px;
-}
-/* header {
-    background-color: violet;
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center ;
-    height: 60px;
-    margin: 0;
-}
-header div.contenedor {
-    place-content: flex-start;    
-}
-header div.contenedor nav {
-    width: 70%;
-    display: flex;
-    place-content: space-between;
-
-} */
-/* Color de fondo de pagina:#EDDCC1;
-Color del texto: black;
-Color Encabezado:violet;
-Color Barra navegacion: gris; */
+/*Estilos generales*/
 
 :root {
     /*color fondo de pagina*/
@@ -103,7 +76,7 @@ header {
 }
 header ul, footer ul, #nosotros ul {
     list-style-type: none;
-    margin: o;
+    margin: 0;
     padding: 0;
 }
 header ul, footer ul {
