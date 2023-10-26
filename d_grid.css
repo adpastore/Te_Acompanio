@@ -1,0 +1,306 @@
+    /* .grid-container {
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0 auto;
+    max-width: 70rem;
+    width: 100%;
+}  */
+
+/* Estilos para el encabezado (header) */
+.header {
+    grid-column: 1 / -1; /* Ocupa todas las columnas disponibles */
+    grid-row: 1; /* Ocupa la primera fila */
+}
+/* Estilos para el contenido principal (main) */
+
+
+
+/* Estilos para el pie de página (footer) */
+.footer {
+    grid-column: 1 / -1; /* Ocupa todas las columnas disponibles */
+    grid-row: 3; /* Ocupa la tercera fila */
+}
+
+
+
+:root {
+    /*color fondo de pagina*/
+    --color-page: #EDDCC1;
+    /*color fondo alternativo*/
+    --color-alt: light rgb(223, 184, 236);
+    
+    /*Color barra superior*/
+    --color-barra: rgba(248, 155, 248, 0.705);
+
+    /*Color de texto*/
+
+    --color-texto: black;
+
+    /*Color barra desplazamiento*/
+
+    --color-barralateral:grey;
+
+    /*Color Boton */
+
+    --color-boton: green;
+
+    /*Color letra-navegacion*/
+
+    --color-let-nav: white;
+}
+/*se ve fondo blanco y bordes del main*/
+/* body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--color-page);
+    color: var(--color-texto);
+    margin: 0;
+} */
+a {
+    color: var(--color-texto);
+    text-decoration: none;
+    padding: 1em;
+}
+a.actual {
+    font-weight: bold;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    margin-top: 0;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-texto);
+    height: 2em;
+}
+
+.logo img {
+    justify-content: flex-start;
+    height: 4em;
+}
+.logo p {
+    font-family: 'Playball', cursive;
+    font-size: 1.5em;
+}
+
+.contenedor {
+    background-color: var(--color-barra);
+    color: var(--color-texto);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+header ul, footer ul, #nosotros ul {
+    list-style-type: none;
+    margin: o;
+    padding: 0;
+}
+header ul, footer ul {
+    display: flex;
+    place-content: space-between;
+}
+header ul {
+    font-size: .9em;
+    margin-right: 5px;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* align-items: center;    */
+    background-color: lightslategrey;
+    grid-gap: 2rem;
+    padding: 2rem;
+    z-index: 555;
+} 
+main .cont1 {
+    border-color: blueviolet;
+    border-style: solid;/*sacar par no ver los bordes*/
+    border-radius: 1em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background-color:var(--color-barra);
+    z-index: 9998;
+    
+
+}
+main .cont2 {
+    border-color: blueviolet;
+    border-style: solid;/*sacar par no ver los bordes*/
+    border-radius: 1em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background-color: var(--color-barra);
+    z-index: 9998;
+}
+.profesor {
+    height: 20em;
+    /* padding-top: 2em;
+    padding-left: 3rem; */
+    border-radius: 2em;
+    max-width: 100%;
+    height: auto;
+}
+.alumno {
+    height: 15em;
+    /* padding-top: 2em;
+    padding-left: 3rem; */
+    border-radius: 2em;
+    max-width: 100%;
+    height: auto;
+    align-content:
+    
+}
+.main p {
+    font-family: cursive;
+    font-size: 16;
+    border: 1px ;
+    pading:10px;
+    text-align: justify;
+    margin: 1.5em;
+}
+footer {
+    background-color: var(--color-barra);
+}
+footer ul {
+    margin-bottom: 0;
+}
+
+.boton-principal {
+    background: var(--color-boton);
+    color: var(--color-let-nav);
+    border: 3px solid var(--color-boton);
+    border-radius: 5em;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: .5em 1.1em;
+    display: inline-block
+}
+.boton-principal:hover {
+    color:var(--color-boton);
+    background: var(--color-let-nav);
+}
+#contenedor, main, aside, footer {
+    padding: 1em;
+}
+#nosotros li img {
+    width: 10em;
+    height: 10em;
+}
+.grid-container {
+    width: 100%;
+    max-width: 1080;
+    margin: 0 auto;
+    background-color:rgb(169, 212, 206);
+} 
+#menu, #menu-check {
+    display: none;   
+}
+
+@media only screen and (max-width: 600px) {
+    #menu-check:not(:checked) ~ nav {
+        display: none;
+    }
+    #menu-check:checked ~ nav {
+        display: block;
+    }
+    .logo {
+
+        height: 3em;
+    }
+    #menu {
+        display: block;
+        color: var(--color-texto);
+        background-color: transparent;
+        font-size: 1.2em;
+        font-weight: bold;
+        border: 3px solid var(--color-texto);
+        border-radius: .3em;
+        position:absolute;
+        right: 2em;    
+        z-index: 9999;
+    }
+    #menu:hover {
+        color : var(--color-let-nav);
+        background: var(--color-texto);
+    }
+    #menu-cerrar {
+        display: none;
+    }
+
+    #menu-check:checked ~ label #menu-abrir {
+        display: none;
+    }
+    #menu-check:checked ~ label #menu-cerrar {
+        display: block;
+    }
+
+    header div.contenedor nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background-color: var(--color-barralateral);
+        padding-top: .5em;
+        padding-right: 1.5em;
+        opacity: 0.8;
+        color:var(--color-let-nav)
+    }
+    header div.contenedor nav ul a {
+        color:var(--color-let-nav);
+        background: none;
+    }
+    header div.contenedor nav ul, header div.contenedor nav ul li {
+        display: block;
+        text-align: right;
+        margin-top: 1em;
+    
+    }
+    .main {
+        grid-template-columns: 1fr;
+        cont1, .cont2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centra horizontalmente el contenido de la columna */
+        align-items: center; /* Centra verticalmente el contenido de la columna */
+          }
+         .cont1, .cont2 {
+            display: block;
+            flex-direction: column;
+            justify-content: center; /* Centra horizontalmente el contenido de la columna */
+            align-items: center; /* Centra verticalmente el contenido de la columna */
+          }
+        .cont1 img {
+            max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
+            height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
+          }
+    }
+}
+
+    @media only screen and (max-width: 770px) {
+        display : grid;
+        justify-content : center;
+        align-content: center;      
+    
+      
+      .cont1, .cont2 {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente el contenido de la columna */
+        align-items: center; /* Centra verticalmente el contenido de la columna */
+      }
+      
+      img {
+        max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
+        height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
+      }
+    }
+      
