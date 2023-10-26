@@ -3,17 +3,17 @@
     --bordeForm: #007BFF;
     --botones: #4CAF50;
 
-  /color fondo de pagina/
-      --color-page: #EDD-CC;
+  /*color fondo de pagina*/
+      --color-page: #EDDCC1;
 
-      /Color barra superior/
+      /*Color barra superior*/
       --color-barra: violet;
 
-      /Color de texto/
+      /*Color de texto*/
 
       --color-texto: black;
 
-      /Color barra desplazamiento/
+      /*Color barra desplazamiento*/
 
       --color-barralateral:grey;
 
@@ -21,15 +21,12 @@
 
       --color-boton: green;
 
-      /Color letra-navegacion/
+      /*Color letra-navegacion*/
 
       --color-let-nav: white;
 }
 
 /* Estilos generales */
-/*body {
-  font-family: "Inter", sans-serif;
-}*/
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: var(--color-page);
@@ -39,7 +36,10 @@ body {
 a {
     color: var(--color-texto);
     text-decoration: none;
+    font-family: 'Playball', cursive;
+    font-size: 1.5em;
 }
+
 a.actual {
     font-weight: bold;
 }
@@ -74,7 +74,7 @@ header {
 }
 header ul, footer ul, #nosotros ul {
     list-style-type: none;
-    margin: o;
+    margin: 0;
     padding: 0;
 }
 header ul, footer ul {
@@ -97,8 +97,28 @@ footer {
 footer ul {
     margin-bottom: 0;
 }
-
-
+/*Pagia nuevo*/
+.boton-principal {
+    background: var(--color-boton);
+    color: var(--color-let-nav);
+    border: 3px solid var(--color-boton);
+    border-radius: 5em;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: .5em 1.1em;
+    display: inline-block
+}
+.boton-principal:hover {
+    color:var(--color-boton);
+    background: var(--color-let-nav);
+}
+#contenedor, main, aside, footer {
+    padding: 1em;
+}
+#nosotros li img {
+    width: 10em;
+    height: 10em;
+}
 
 /* Imágenes y banners */
 .banner{
@@ -136,9 +156,6 @@ nav li {
   font-weight: bold;
    font-size: 16px
 }
-
-}
-
 nav a:hover {
   color: #c78c19;
   text-decoration: underline;
