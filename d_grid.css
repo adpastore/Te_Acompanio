@@ -65,7 +65,10 @@ a {
 a.actual {
     font-weight: bold;
 }
-
+body {
+    margin: 0;
+    padding: 0;
+}
 header {
     margin-top: 0;
 }
@@ -93,6 +96,7 @@ header {
     justify-content: space-between;
     align-items: center;
 
+
 }
 header ul, footer ul, #nosotros ul {
     list-style-type: none;
@@ -113,45 +117,56 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* align-items: center;    */
-    background-color: hotpink;
+    background-color: lightslategrey;
     grid-gap: 2rem;
     padding: 2rem;
     z-index: 555;
 } 
 main .cont1 {
     border-color: blueviolet;
-    border-style: solid;
+    border-style: solid;/*sacar par no ver los bordes*/
+    border-radius: 1em;
     padding-top: 3em;
     padding-bottom: 3em;
-    background-color:var(--color-let-nav);
+    background-color:var(--color-barra);
     z-index: 9998;
     
 
 }
 main .cont2 {
     border-color: blueviolet;
-    border-style: solid;
+    border-style: solid;/*sacar par no ver los bordes*/
+    border-radius: 1em;
     padding-top: 3em;
     padding-bottom: 3em;
-    background-color: var(--color-alt);
+    background-color: var(--color-barra);
     z-index: 9998;
 }
 .profesor {
     height: 20em;
-    padding-top: 2em;
-    padding-left: 3rem;
+    /* padding-top: 2em;
+    padding-left: 3rem; */
     border-radius: 2em;
+    max-width: 100%;
+    height: auto;
 }
 .alumno {
     height: 15em;
-    padding-top: 2em;
-    padding-left: 3rem;
+    /* padding-top: 2em;
+    padding-left: 3rem; */
     border-radius: 2em;
+    max-width: 100%;
+    height: auto;
+    align-content:
     
 }
-p {
+.main p {
+    font-family: cursive;
     font-size: 16;
-;
+    border: 1px ;
+    pading:10px;
+    text-align: justify;
+    margin: 1.5em;
 }
 footer {
     background-color: var(--color-barra);
@@ -185,7 +200,7 @@ footer ul {
     width: 100%;
     max-width: 1080;
     margin: 0 auto;
-    background-color: lightgrey;
+    background-color:rgb(169, 212, 206);
 } 
 #menu, #menu-check {
     display: none;   
@@ -250,6 +265,42 @@ footer ul {
         margin-top: 1em;
     
     }
+    .main {
+        grid-template-columns: 1fr;
+        cont1, .cont2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centra horizontalmente el contenido de la columna */
+        align-items: center; /* Centra verticalmente el contenido de la columna */
+          }
+         .cont1, .cont2 {
+            display: block;
+            flex-direction: column;
+            justify-content: center; /* Centra horizontalmente el contenido de la columna */
+            align-items: center; /* Centra verticalmente el contenido de la columna */
+          }
+        .cont1 img {
+            max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
+            height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
+          }
+    }
 }
 
-
+    @media only screen and (max-width: 770px) {
+        display : grid;
+        justify-content : center;
+        align-content: center;      
+    
+      
+      .cont1, .cont2 {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente el contenido de la columna */
+        align-items: center; /* Centra verticalmente el contenido de la columna */
+      }
+      
+      img {
+        max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
+        height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
+      }
+    }
+      
