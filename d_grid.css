@@ -42,12 +42,12 @@
     --color-let-nav: white;
 }
 /*se ve fondo blanco y bordes del main*/
-/* body {
+body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: var(--color-page);
     color: var(--color-texto);
     margin: 0;
-} */
+} 
 .contenedor {
     background-color: var(--color-barra);
     color: var(--color-texto);
@@ -59,6 +59,7 @@
 
 }
 a {
+    font-family: 'Playball', cursive;
     font-size: 1.2em;
     color: var(--color-texto);
     text-decoration: none;
@@ -314,6 +315,8 @@ footer ul li {
                     max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
                     height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
             }
+            
+
     }
 
     @media only screen and (max-width: 770px) {   
@@ -336,39 +339,71 @@ footer ul li {
         #leyenda {
             display: none;
         }
+        .nosotros {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+        }
     }
 }
 
 
 
-.nosotros {
+/* .nosotros {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 4em;
-        margin-left: 3em;
+    grid-gap: 3em;
+    margin-left: 3em;
     margin-right: 3em;
-    padding-top: 5em;
-    padding-bottom: 5em;
+    padding-top: 4em;
+    padding-bottom: 4em;
     background-color: var(--color-alt);
-    }
-.nosotros .tarjeta {
-        display: grid;
+    justify-content: center;
+    } */
+/* .nosotros .tarjeta {
+        display: flex;
+        flex-direction: column;
         border-radius: 15rem;
         box-shadow: rgba(0, 0, 0, 0.08) 0 0 2rem;
         background-color: lightgreen;
         padding: 2rem;
         justify-items: center;
-      }
-.nosotros .tarjeta img {
-    width: 80%;
+      } */
+/* .nosotros .tarjeta img {
+    width:250px;
     height: auto;
-    border-radius: 15em;
-}
+    border-radius: 10em;
+} */
      
 blockquote {
     display: block;
     text-align: center;
+    margin-top: 2px;
 }
+.nosotros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 3em;
+    margin-bottom: 1em;
+
+  }
+  /* .nosotros .tarjeta img {
+    width:250px;
+    height: auto;
+    border-radius: 10em; */
+
+    .tarjeta {
+        border: 1px solid #ccc;
+        text-align: center;
+        padding: 20px;
+        border-radius: 15em;
+      }
+      .tarjeta img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12em;
+      }
 
 
       
