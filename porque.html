@@ -4,54 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <!--meta de adaptacion a celulares-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="viewport" content="width=device-width">
     <title>Te Acompaño...</title>
     <!--Reseteo de estilos predefinidos -->
-    <link rel="stylesheet" href="../Te_Acompaño/reset.css">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/nuevo.css">
     <link rel="icon" href="/imagenes1/favicon.png" type="image/x-icon">
 </head>
 
 <body>
-<header>
+<div class="grid-container">
 
-    <div class="contenedor">
-        <a class="logo">
-            <img src="/imagenes1/Logo.png" alt="Logo Te Acompaño" class="src">
-            <p>Te acompaño...</p>
-        </a>
+    <header class="header">
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="objetivos.html">Objetivos</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+        <div class="contenedor">
+            <div>
+                <a class="logo">
+                    <img src="/imagenes1/Logo.png" alt="Logo Te Acompaño" class="src">
+                    <p>Te acompaño...</p>
+                </a>
+            </div>
+            <input type="checkbox" id="menu-check">
+            <label id="menu" for="menu-check">
+                <span id="menu-abrir">&#9776;</span>
+                <span id="menu-cerrar">X</span>
+            </label>
 
-<img class="banner" src="banner/banner.jpeg" alt="Te acompaño">
+            <nav>
+                <ul>
+                    <li><a href="porque.html">Home</a></li>
+                    <li><a href="objetivos.html">Objetivos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</div>
+<div>
+    <img class="banner" src="banner/banner.jpeg" alt="Te acompaño">
+</div>
 
 <main>
     <section class="principal">
-        <h2 class="titulo-principal">Por qué  Te acompaño?</h2>
+        <h2 class="titulo-principal">Por qué Te acompañamos?</h2>
 
         <img class="sabemos" src="imagenes/TeAcompanio.jpeg" alt="Te acompaño">
-        <p> Porque sabemos que con las herramientas  y  conocimientos adecuados podemos hacer la diferencia en las
-            trayectorias educativas de nuestros alumnos y alumnas potenciando su habilidades personales..</p>
-        <!-- em destaca con énfasis el texto, luego lo usaremos en el css para cambiar el color-->
-        <p id="mision"><em>Nuestra misión es:<strong> "Proporcionar autoestima y calidad de vida a nuestros
+        <p> Porque sabemos que con las herramientas y conocimientos adecuados podemos hacer la diferencia en las
+            trayectorias educativas de nuestros alumnos y alumnas potenciando sus habilidades personales..</p>
+        <br>
+        <p id="mision"><em>Nuestra misión es:<br><strong> "Proporcionar autoestima y calidad de vida a nuestros
             alumnos".</strong></em>
         </p>
+        <br>
         <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el
             mundo de la educación, para así ofrecer las últimas tendencias. Nuestro acompañamiento posee un
             padrón de excelencia y agilidad, garantizando la calidad y satisfacción de nuestros alumnos.
@@ -102,11 +112,11 @@
 </main>
 <footer>
     <ul>
-        <li><a>&copy; Te Acompaño,  2023</a></li>
+        <li><a>&copy; Te Acompaño, 2023</a></li>
+        <li id="leyenda">"Un objetivo sin un plan es solo un deseo" Antoine de Saint-Exupéry</li>
         <li><a>Aviso legal</a></li>
     </ul>
 
 </footer>
-
 </body>
 </html>
