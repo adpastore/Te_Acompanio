@@ -562,6 +562,7 @@
         header div.contenedor nav ul li {
             color:var(--color-let-nav);
             background: none;
+            font-size: .9em;
         }
         header div.contenedor nav ul, header div.contenedor nav ul li {
             display: block;
@@ -644,7 +645,7 @@
 
     }
 
-        @media screen and (max-width: 980px) {
+        @media screen and (max-width: 980px) and (min-width: 769px) {
             .caja {
                 width: 100%;
                 padding: 10px;
