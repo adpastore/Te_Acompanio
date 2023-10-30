@@ -69,12 +69,12 @@
 
     .logo img {
         justify-content: flex-start;
-        height: 4em;
+        height: 3em;
     }
 
     .logo p {
         font-family: 'Playball', cursive;
-        font-size: 1.8em;
+        font-size: 1.6em;
     }
 
     .contenedor {
@@ -506,7 +506,7 @@
             max-width: 100%;
         }
         .logo {
-            height: 2em;
+            height: 3em;
         }
         .logo p{
         font-size: 1.3em;
