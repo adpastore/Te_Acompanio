@@ -15,12 +15,27 @@
     margin: 10px;
     text-align: center;
     }
+#main :hover {
+    animation: changeColor 5s ease infinite;
+    transition-duration: 2s;
+    transform: scale(1.1);
+}
     .titulo-principal2 {
             text-align: center;
-            font-size: 2em;
+            font-size: 2.3em;
             margin: 0 0 1em;
             clear: left;
-        }
+    }
+.principal :hover {
+    transition-duration: 2s;
+    background-color: #ADD8E6;
+}
+    .titulo-principal {
+            text-align: center;
+            font-size: 2.3em;
+            margin: 0 0 1em;
+            clear: left;
+    }
 
 /* Media Queries --------------------------------------------------*/
 @media only screen and (max-width: 320px) {

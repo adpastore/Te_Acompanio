@@ -4,7 +4,7 @@
         --botones: #4CAF50;
         --color-alt: light rgb(223, 184, 236);
         --color-page: lightslategrey;;
-        --color-barra: rgba(248, 155, 248, 0.705);
+        --color-barra: #E1ABEB;
         --color-texto: black;
         --color-barralateral: rgba(128, 128, 128, 0.404);
         --color-boton: green;
@@ -182,7 +182,7 @@
         margin: 0 auto;
     }
     .principal p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     }
     .contenido-diferenciales {
         width: 100%;
@@ -553,17 +553,19 @@
             z-index: 9999;
         }
         .contenedor {
-            padding: .em;
+            padding: 1em;
         }
         header div.contenedor nav ul li {
             color:var(--color-let-nav);
             background: none;
             font-size: .9em;
+            margin-right: .1em;
         }
         header div.contenedor nav ul, header div.contenedor nav ul li {
             display: block;
             text-align: left;
             margin-top: .6em;
+            margin-right: .1em;
 
         }
 
