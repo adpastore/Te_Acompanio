@@ -60,7 +60,7 @@ body {
 }
 a {
     font-family: 'Playball', cursive;
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: var(--color-texto);
     text-decoration: none;
     margin-right: .5em;
@@ -89,11 +89,11 @@ header {
 
 .logo img {
     justify-content: flex-start;
-    height: 4em;
+    height: 3em;
 }
 .logo p {
     font-family: 'Playball', cursive;
-    font-size: 1.8em;
+    font-size: 1.6em;
 }
 nav a.actual:hover {
     color:var(--color-texto)
@@ -179,6 +179,110 @@ header ul {
     text-align: justify;
     margin: 1.5em;
 }
+
+/**********************************************varios******************************************************/
+    /* Contenido principal */
+    .principal,
+    .mapa-contenido {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .principal p {
+    font-size: 1.1em;
+    }
+    .contenido-diferenciales {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Títulos */
+    .titulo-principal {
+        text-align: center;
+        font-size: 2em;
+        margin: 0 0 1em;
+        clear: left;
+    }
+
+    strong {
+        font-weight: bold;
+    }
+
+    em {
+        font-style: italic;
+    }
+
+    /* Otras secciones */
+    .sabemos {
+        width: 40%;
+        float: left;
+        margin: 0 20px 20px 0;
+    }
+
+    .mapa {
+        padding: 3em 0;
+        background: linear-gradient(#fefefe, #888888);
+    }
+
+    .mapa p {
+        margin: 0 0 2em;
+        text-align: center;
+    }
+
+    .diferenciales {
+        padding: 3em 0;
+    }
+
+    .contenido-diferenciales {
+        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .lista-diferenciales {
+        width: 60%;
+        /*display: inline-block;*/
+        margin: 0 auto;
+        vertical-align: top;
+        text-align: right;
+    }
+
+    .items {
+        line-height: 1.5;
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+
+    .items:before {
+        content: "✯";
+    }
+
+    .items:first-child {
+        font-weight: bold;
+    }
+
+    /* Efectos en imágenes */
+    .imagen-diferenciales {
+        width: 27%;
+        float: center;
+        transition: 0.4s;
+        box-shadow: 10px 10px 25px 10px #000000;
+    }
+
+    .imagen-diferenciales:hover {
+        opacity: 0.3;
+    }
+
+    .video {
+        width: 80%;
+        margin: 3em auto;
+    }
+
+/**********************************************varios******************************************************/
+
 footer {
     background-color: var(--color-barra);
 }
@@ -186,10 +290,10 @@ footer ul {
     margin-bottom: 0;
 }
 footer ul li a{
-    font-size: 1.1em;
+    font-size: 1.3em;
 }
 footer ul li {
-    font-size: 1em;
+    font-size: .8em;
 }
 
 .boton-principal {
