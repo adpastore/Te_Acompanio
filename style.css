@@ -31,7 +31,7 @@
         font-weight: bold;
     }
     nav a.actual:hover {
-        color: var(--color-texto)
+        color: var(--color-let-nav)
     }
     nav a:hover {
         color: var(--color-let-nav);
@@ -625,7 +625,7 @@
                 color:var(--color-let-nav);
             }
             nav a:hover {
-                color: var(--color-texto);
+                color: var(--color-let-nav);
             }
          a {
                 font-size: 1.2em;
