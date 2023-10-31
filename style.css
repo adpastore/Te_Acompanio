@@ -621,6 +621,12 @@
         .slider-label {
             margin-left: 10px;
         }
+          nav a.actual:hover {
+                color:var(--color-let-nav);
+            }
+            nav a:hover {
+                color: var(--color-texto);
+            }
          a {
                 font-size: 1.2em;
                 color: var(--color-let-nav);
