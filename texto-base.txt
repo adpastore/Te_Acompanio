@@ -1,6 +1,41 @@
-Qué nos impulsó a pensar en esta propuesta?
-Nuestro recorrido en el sistema educativo nos interpela constantemente sobre las prácticas docentes.
-No desde un enfoque crítico sino desde la pregunta de cómo podemos guiar a nuestros equipos para que
-dentro de la diversidad escolar logren visualizar las posibilidades de aprendizajes heterogéneos
-y así puedan implementar estrategias que realmente sean para cada uno de los sujetos.
-Sujetos desde una perpectiva de derecho a recibir una educación de calidad y para todos.
+Presentación Profesional para el Proyecto Educativo "Te Acompaño"
+
+Un equipo excepcional formado por Carlos Rosselli, Nicolas Lamattina y Andrés Pastore,
+ha sido cuidadosamente seleccionado por el Project Manager Juan Pablo Nardone para liderar
+el desarrollo de una página web en nombre de un cliente comprometido con la transformación
+de la educación clásica y obsoleta que actualmente prevalece en nuestro país.
+
+Este ambicioso proyecto educativo, conocido como "Te Acompaño," busca revolucionar la educación
+tradicional.
+Dentro de este emocionante proyecto, hemos comenzado por incorporar los colores y las imágenes
+específicas proporcionadas por nuestro cliente. Para garantizar un enfoque coordinado y eficiente,
+hemos distribuido las tareas clave de la siguiente manera:
+
+Página de Inicio (Índex): Aquí presentaremos la actividad fundamental de nuestro cliente y el
+enfoque principal de "Te Acompaño."
+
+Segunda Página: En esta sección, profundizaremos en los detalles de las actividades desarrolladas
+por nuestro cliente, destacando los aspectos más relevantes de su proyecto.
+
+Tercera Página de Contacto: Hemos diseñado esta página para facilitar la comunicación y la interacción,
+ofreciendo múltiples opciones para que los visitantes se conecten con nosotros.
+
+Además, en un paso siguiente, consideramos la incorporación de una o dos páginas adicionales para
+presentar al personal y al equipo dedicado a esta noble institución.
+Reconociendo la importancia de la accesibilidad en la era digital, estamos comprometidos a asegurar
+que nuestra página sea amigable y funcional en dispositivos móviles y tabletas, garantizando así una
+experiencia de usuario óptima.
+
+Cada miembro del equipo utilizará la IDE (Entorno de Desarrollo Integrado) de su preferencia para
+llevar a cabo esta tarea. Sin embargo, es fundamental destacar que todo el trabajo será gestionado
+y monitorizado a través de nuestro repositorio en GitHub. Cada uno de nosotros trabajará en sus
+ramas derivadas de la rama principal "Develop," y una vez completada la primera versión utilizable,
+se fusionará con la rama "Master" para su revisión y entrega al cliente.
+
+Además, para garantizar una comunicación efectiva y una colaboración sin problemas, el equipo se
+mantendrá conectado a través de plataformas como Zoom, Discord y WhatsApp.
+
+Este proyecto representa un emocionante desafío y una oportunidad única para marcar una diferencia
+significativa en el ámbito de la educación. Nuestro equipo está comprometido con el éxito
+de "Te Acompaño" y trabajará incansablemente para lograr resultados sobresalientes.
+
