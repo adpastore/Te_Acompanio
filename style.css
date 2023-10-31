@@ -621,6 +621,13 @@
         .slider-label {
             margin-left: 10px;
         }
+         a {
+                font-size: 1.2em;
+                color: var(--color-let-nav);
+                text-decoration: none;
+                margin-right: .5em;
+                
+            }
 
      }
 
