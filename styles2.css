@@ -86,6 +86,13 @@
 #menu-check:checked ~ label #menu-cerrar {
       display: block;
 }
+#main :hover {
+    animation: changeColor 5s ease infinite;
+    transition-duration: 2s;
+    transform: scale(1.1);
+}
+
+
 }
 
 @media only screen and (max-width: 768px) and (min-width: 321px) {
@@ -156,10 +163,10 @@
             flex-direction: row;
             align-items: center;
         }
-        header div.contenedor nav ul, header div.contenedor nav ul li {
+      /*  header div.contenedor nav ul, header div.contenedor nav ul li {
                     display: block;
                     text-align: left;
                     margin-top: .6em;
                     font-size: .9em;
-                }
+                }*/
 }

@@ -21,7 +21,7 @@
 
     a {
         font-family: 'Playball', cursive;
-        font-size: 1.2em;
+        font-size: 1.1em;
         color: var(--color-texto);
         text-decoration: none;
         margin-right: .5em;
@@ -48,7 +48,7 @@
         background-color: var(--color-barra);
         z-index: 999;
     }
-
+/*
     .header {
         position: fixed;
         top: 0;
@@ -57,7 +57,7 @@
         width: 100%;
         background-color: var(--color-barra);
         z-index: 999;
-    }
+    }*/
 
     .logo {
         display: flex;
@@ -161,12 +161,7 @@
     /* Navegación */
     nav li {
         display: inline;
-        margin: 0 2px;
         font-size: 16;
-    }
-
-    nav a.actual:hover {
-        color:var(--color-texto)
     }
 
     nav a:hover {
@@ -488,7 +483,7 @@
 
     /* Media Queries --------------------------------------------------*/
 
-     @media only screen and (max-width: 320px) {
+     @media only screen and (min-width: 320px) and (max-width: 600px){
          /* porque.html */
          body, html {
              width: 100%;
@@ -602,7 +597,7 @@
             margin-top: 0;
         }
         form {
-            margin-top: 20%;
+            margin-top: 25%;
             width: 80%;
             padding: 0;
         }
@@ -614,17 +609,23 @@
             flex-direction: row;
             align-items: center;
         }
+
+        .checkbox-container {
+            display: block;
+            align-items: center;
+            justify-content: space-between;
+            }
         .slider-checkbox {
-            width: 50px;
+            width: 10px;
         }
         .slider-label {
-            width: 50px;
+            margin-left: 10px;
         }
 
      }
 
 
-   @media only screen and (max-width: 768px) and (min-width: 321px) {
+   @media only screen and (max-width: 559px) and (min-width: 321px) {
         .banner {
             margin-top: 15%;
         }
@@ -643,7 +644,7 @@
 
     }
 
-        @media screen and (max-width: 980px) and (min-width: 769px) {
+        @media screen and (max-width: 980px) and (min-width: 601px) {
             .caja {
                 width: 100%;
                 padding: 10px;
