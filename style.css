@@ -31,7 +31,7 @@
         font-weight: bold;
     }
     nav a.actual:hover {
-        color: var(--color-texto)
+        color: var(--color-let-nav)
     }
     nav a:hover {
         color: var(--color-let-nav);
@@ -433,7 +433,7 @@
         transition: left 0.3s;
     }
 
-    .slider-checkbox:checked + .slider-label::before {
+    .slider-checkbox:checked + .slider-label::before{
         left: 25px;
     }
 
@@ -483,7 +483,7 @@
 
     /* Media Queries --------------------------------------------------*/
 
-     @media only screen and (min-width: 320px) and (max-width: 600px){
+     @media only screen and (max-width: 320px){
          /* porque.html */
          body, html {
              width: 100%;
@@ -533,12 +533,15 @@
         #menu-check:checked ~ label #menu-cerrar {
             display: block;
         }
-
+        header{
+            height: 10px;
+            position: fixed;
+        }
         header div.contenedor nav {
             position: absolute;
             top: 0;
             right: 0;
-            height: 100%;
+            height: 50px;
             width: 25%;
             background-color: var(--color-barralateral);
             padding-top: 2.5em;
@@ -547,11 +550,12 @@
             color:var(--color-let-nav);
             z-index: 9999;
         }
+
         .contenedor {
             padding: 1em;
         }
         header div.contenedor nav ul li {
-            color:var(--color-let-nav);
+            color:var(--color-texto);
             background: none;
             font-size: .9em;
             margin-right: .1em;
@@ -563,7 +567,15 @@
             margin-right: .1em;
 
         }
-
+        a.actual {
+                font-weight: bold;
+            }
+            nav a.actual:hover {
+                color: var(--color-texto)
+            }
+            nav a:hover {
+                color: var(--color-let-nav);
+            }
         .principal,
         .mapa-contenido{
             width: 100%;
@@ -623,18 +635,152 @@
         }
 
      }
-
-
-   @media only screen and (max-width: 559px) and (min-width: 321px) {
+@media only screen and (max-width: 600px) and  (min-width: 321px){
+ /* porque.html */
+         body, html {
+             width: 100%;
+             margin: 0;
+             padding: 0;
+         }
+          #menu-check:not(:checked) ~ nav {
+          display: none;
+                         }
+         #menu-check:checked ~ nav {
+            display: block;
+        }
         .banner {
-            margin-top: 15%;
+            margin-top: 25%;
+            max-width: 100%;
+        }
+       /* .banner {
+                    margin-top: 15%;
+                }
+                form {
+                    width: 80%;
+                    padding: 0;
+                }
+                .cuerpo-contact {
+                    margin-top: 5%;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    align-items: center;
+                }*/
+        .logo {
+            height: 3em;
+        }
+        .logo p{
+        font-size: 1.3em;
+        }
+
+        #menu {
+            display: block;
+            color: var(--color-texto);
+            background-color: transparent;
+            font-size: 1.2em;
+            font-weight: bold;
+            border: 3px solid var(--color-texto);
+            border-radius: .3em;
+            position:absolute;
+            right: 2em;
+            z-index: 999999;
+        }
+        #menu:hover {
+            color : var(--color-let-nav);
+            background: var(--color-texto);
+        }
+        #menu-cerrar {
+            display: none;
+        }
+
+        #menu-check:checked ~ label #menu-abrir {
+            display: none;
+        }
+        #menu-check:checked ~ label #menu-cerrar {
+            display: block;
+        }
+        header{
+            height: 10px;
+            position: relative;
+        }
+        header div.contenedor nav {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 50px;
+            width: 25%;
+            background-color: var(--color-barralateral);
+            padding-top: 2.5em;
+            padding-right: 1.5em;
+            opacity: 1;
+            color:var(--color-let-nav);
+            z-index: 9999;
+        }
+        .contenedor {
+            padding: 1em;
+        }
+        header div.contenedor nav ul li {
+            color:var(--color-let-nav);
+            background: none;
+            font-size: .9em;
+            margin-right: .1em;
+        }
+        header div.contenedor nav ul, header div.contenedor nav ul li {
+            display: block;
+            text-align: left;
+            margin-top: .5%;
+            margin-right: .1em;
+
+        }
+        a.actual {
+                font-weight: bold;
+            }
+            nav a.actual:hover {
+                color: var(--color-texto);
+            }
+            nav a:hover {
+                color: var(--color-let-nav);
+            }
+        .principal,
+        .mapa-contenido{
+            width: 100%;
+        }
+        .sabemos {
+            width: 80%;
+        }
+
+        .contenido-diferenciales,
+         .titulo-principal {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .lista-diferenciales{
+        flex: 1;
+        z-index: 1;
+         width: 100%;
+        }
+     .imagen-diferenciales {
+         flex: 1;
+         z-index: 2;
+         max-width: 100%;
+     }
+
+        .mapa-contenido iframe {
+            max-width: 100%;
+            margin: 0;
+        }
+        main {
+            margin-top: 0;
         }
         form {
+            margin-top: 25%;
             width: 80%;
             padding: 0;
         }
+
         .cuerpo-contact {
-            margin-top: 15%;
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
@@ -642,9 +788,102 @@
             align-items: center;
         }
 
-    }
+        .checkbox-container {
+            display: block;
+            align-items: center;
+            justify-content: space-between;
+            }
+        .slider-checkbox {
+            width: 10px;
+        }
+        .slider-label {
+            margin-left: 10px;
+        }
+        .container-contacto !important {
+            margin-top: 15%;
+        }
+}
 
-        @media screen and (max-width: 980px) and (min-width: 601px) {
+@media screen and (max-width: 980px) and (min-width: 601px) {
+    #menu-check:not(:checked) ~ nav {
+        display: none;
+    }
+                       #menu-check:checked ~ nav {
+                           display: block;
+                       }
+                       .logo {
+
+                           height: 3em;
+                       }
+                       #menu {
+                           display: block;
+                           color: var(--color-texto);
+                           background-color: transparent;
+                           font-size: 1.2em;
+                           font-weight: bold;
+                           border: 3px solid var(--color-texto);
+                           border-radius: .3em;
+                           position:absolute;
+                           right: 2em;
+                           z-index: 999999;
+                       }
+                       #menu:hover {
+                           color : var(--color-let-nav);
+                           background: var(--color-texto);
+                       }
+                       #menu-cerrar {
+                           display: none;
+                       }
+
+                       #menu-check:checked ~ label #menu-abrir {
+                           display: none;
+                       }
+                       #menu-check:checked ~ label #menu-cerrar {
+                           display: block;
+                       }
+
+                       header div.contenedor nav {
+                           position: absolute;
+                           top: 0;
+                           right: 0;
+                           height: 100%;
+                           width: 25%;
+                           background-color: var(--color-barralateral);
+                           padding-top: 2.5em;
+                           padding-right: 1.5em;
+                           opacity: 1;
+                           color:var(--color-let-nav);
+                           z-index: 9999;
+                       }
+                       .contenedor {
+                           padding: .5em;;
+                       }
+                       header div.contenedor nav ul li {
+                           color:var(--color-let-nav);
+                           background: none;
+                       }
+                       header div.contenedor nav ul, header div.contenedor nav ul li {
+                           display: block;
+                           text-align: left;
+                           margin-top: .6em;
+
+                       }
+                       nav a.actual:hover {
+                           color:var(--color-let-nav);
+                       }
+                       nav a:hover {
+                           color: var(--color-texto);
+                       }
+                       a {
+                           font-size: 1.2em;
+                           color: var(--color-let-nav);
+                           text-decoration: none;
+                           margin-right: .5em;
+
+                       }
+            main{
+                margin-top: 0;
+                }
             .caja {
                 width: 100%;
                 padding: 10px;
@@ -682,8 +921,10 @@
                 font-size: 24px;
                 margin: 10px 0;
             }
-
-
+            .banner {
+            width: 100%;
+            margin-top: 5%;
+             }
 
             .productos li {
                 display: block;
@@ -702,6 +943,14 @@
                align-items: center;
 
             }
+        a {
+                font-family: 'Playball', cursive;
+                font-size: 1.1em;
+                color: var(--color-let-nav);
+                text-decoration: none;
+                margin-right: .5em;
+            }
+
 
         }
 
