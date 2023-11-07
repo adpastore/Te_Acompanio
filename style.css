@@ -490,6 +490,8 @@ blockquote {
     }
     header ul{
         margin-top: 0.6em;
+        background: #BA9AC0 !important;
+        width: 140px;
     }
 
     header div.contenedor nav {
@@ -753,7 +755,6 @@ li  a{
     header div.contenedor nav ul, header div.contenedor nav ul li {
         display: block;
         text-align: left;
-        margin-top: 0.5%;
         margin-right: 0.1em;
     }
 

@@ -22,6 +22,7 @@ a {
 
 a.actual {
     font-weight: bold;
+    color: black;
 }
 
 nav a.actual:hover {
@@ -239,8 +240,8 @@ header ul{
         position: absolute;
         top: 0;
         right: 0;
-        margin-right: -15px;
-        line-height: 25px;
+        margin-right: -9px;
+        line-height: 20px;
         height: 100%;
         width: 47%;
         background: var(--color-barralateral);
@@ -306,8 +307,10 @@ header ul{
     transition-duration: 2s;
     transform: scale(1.1);
 }
-#menuCol{
-    font-size: 1.6em !important;
+.menuCol{
+    font-size: 1.4em !important;
+    background-color: #BA9AC0;
+    width: 140px;
     }
 
     a.actual {
@@ -342,7 +345,7 @@ nav a.actual:hover {
 .titulo-principal {
         margin-top: 17%;
         width: 80%;
-        align: left;
+        align: center;
 }
 .usuario{
 
@@ -457,10 +460,9 @@ footer{
     header div.contenedor nav ul, header div.contenedor nav ul li {
         display: block;
         text-align: left;
-        margin-top: 0.5%;
         margin-right: 0.1em;
-       /* width: 100%;*/
     }
+
 li  a{
     font-size: 1.6em;
     }
@@ -539,9 +541,10 @@ html, main {
     }
 .titulo-principal{
         margin-top: 25%;
-        width: 80%;
-        align: left;
-             }
+        width: 100%;
+        font-weight: bold;
+}
+
 #menu {
         color: var(--color-texto);
         background-color: transparent;
@@ -569,8 +572,10 @@ html, main {
             display: block;
         }
  a.actual {
-                 font-weight: bold;
-             }
+        font-weight: bold;
+        color: black;
+ }
+
              nav a.actual:hover {
                  color: var(--color-texto);
              }
