@@ -1,4 +1,3 @@
-
 /* Estilos para el encabezado (header) */
 .header {
     grid-column: 1 / -1; /* Ocupa todas las columnas disponibles */
@@ -381,7 +380,7 @@ li img {
                 z-index: 9999;
             }
             .contenedor {
-                padding: .5em;;
+                padding: .5em;
             }
             header div.contenedor nav ul li {
                 color:var(--color-let-nav);
@@ -512,4 +511,3 @@ blockquote {
       }
 
 
-      
