@@ -1,5 +1,5 @@
 let contenido = document.querySelector('#contenido');
-let mainElement = document.querySelector('#main'); // Accede al elemento <main> por su id "main"
+let mainElement = document.querySelector('#mainjs'); // Accede al elemento <mainjs> por su id "mainjs"
 
 function traerMultiples() {
     fetch('https://randomuser.me/api/?results=6')
