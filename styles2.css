@@ -38,7 +38,7 @@
     }
 
 /* Media Queries --------------------------------------------------*/
-@media only screen and (max-width: 320px) {
+ @media only screen and (max-width: 320px) {
 /* colaboradores.html */
 .body {
                  width: 100%;
@@ -91,15 +91,27 @@
     transition-duration: 2s;
     transform: scale(1.1);
 }
+.cuerpo !important {
+    margin-top: -5%;
+    }
 
 
 }
+@media only screen and (max-width: 600px) and  (min-width: 321px){
+ .cuerpo {
+      margin-left: 20px;
+     width: 90%;
+     margin-top: 80px;
+     padding: 0;
+    }
+ }
 
-@media only screen and (max-width: 768px) and (min-width: 321px) {
+@media only screen and (max-width: 768px) and (min-width: 601px) {
 .body {
                  width: 100%;
                  margin-top: 15px;
                  padding: 0;
+
 
     }
     #main{
@@ -108,6 +120,7 @@
     .header, .contenedor{
         width: 100%;
         }
+
 .usuario {
         width: 80%;
     }
@@ -128,26 +141,29 @@
         right: 2em;
         z-index: 999999;
 }
-#menu-check:not(:checked) ~ nav {
-       display: none;
-}
-#menu-check:checked ~ nav {
-       display: block;
-}
-#menu:hover {
-       color : var(--color-let-nav);
-       background: var(--color-texto);
-}
-#menu-cerrar {
-       display: none;
-}
+ #menu:hover {
+            color : var(--color-let-nav);
+            background: var(--color-texto);
+        }
+        #menu-cerrar {
+            display: none;
+        }
 
-#menu-check:checked ~ label #menu-abrir {
-      display: none;
-}
-#menu-check:checked ~ label #menu-cerrar {
-      display: block;
-}
+        #menu-check:checked ~ label #menu-abrir {
+            display: none;
+        }
+        #menu-check:checked ~ label #menu-cerrar {
+            display: block;
+        }
+ a.actual {
+                 font-weight: bold;
+             }
+             nav a.actual:hover {
+                 color: var(--color-texto);
+             }
+             nav a:hover {
+                 color: var(--color-texto);
+             }
 .banner {
             margin-top: 15%;
         }
@@ -155,18 +171,18 @@
             width: 80%;
             padding: 0;
         }
+        .cuerpo{
+        margin-top: -5%;
+        }
         .cuerpo-contact {
-            margin-top: 15%;
+            margin-top: 8%;
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
             flex-direction: row;
             align-items: center;
         }
-      /*  header div.contenedor nav ul, header div.contenedor nav ul li {
-                    display: block;
-                    text-align: left;
-                    margin-top: .6em;
-                    font-size: .9em;
-                }*/
+
+
+
 }
