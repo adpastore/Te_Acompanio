@@ -1,5 +1,5 @@
 // Validar completar campos
-// import swal from 'sweetalert';
+const swal = require('sweetalert');
 const form = document.getElementById('contact-form');
 form.addEventListener('submit', function (event) {
     event.preventDefault();
@@ -13,7 +13,7 @@ form.addEventListener('submit', function (event) {
         swal("Por favor, completa todos los campos.","","error");
         return;
     }
-
+    console.log("Formulario enviado con éxito.");
     swal("Formulario enviado con éxito.", "Gracias", "success");
 });
 

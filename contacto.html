@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
     <link rel="icon" href="imagenes1/favicon.png" type="image/x-icon">
-
+<!--    <script src="prefixfree.min.js"></script>-->
 </head>
 
 <body>
@@ -48,76 +48,77 @@
 </div>
 
 <div class="container-contacto">
-        <main class="cuerpo-contact">
-            <!-- formulario -->
-            <form id="contact-form">
-                <div class="form-group">
-                    <label for="nombre"><span class="span-contact">*</span>Nombre</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Ejemplo: Nicolás">
-                </div>
-                <div class="form-group">
-                    <label for="apellido"><span class="span-contact">*</span>Apellido:</label>
-                    <input type="text" id="apellido" name="apellido" placeholder="Ejemplo: Lama">
-                </div>
-                <div class="form-group">
-                    <label for="email"><span class="span-contact">*</span>Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" placeholder="Ejemplo: nico@example.com">
-                </div>
-                <div class="form-group">
-                    <label for="telefono">Teléfono:</label>
-                    <!-- <input type="tel" id="telefono" name="telefono" placeholder="Ejemplo: 11-1234-1234"> -->
-                    <input type="tel" id="telefono" placeholder="Ejemplo: 11-1234-1234" oninput="formatoTelefono(this)">
-                </div>
-                <div class="form-group">
-                    <label for="comentario"><span class="span-contact">*</span>Comentario:</label>
-                    <textarea id="comentario" name="comentario" placeholder="Ejemplo: Hola, estoy interesado en..." rows="4"></textarea>
-                </div>
-                <button type="submit">Enviar</button>
-            </form>
-            <!-- checkbox -->
-            <div class="fiel">
-                <fieldset class="contact-method">
-                    <legend>¿Cómo le gustaría que lo contactemos?</legend>
-                    <div class="radio-container">
-                        <label>
-                            <input type="radio" name="contacto" value="email" id="radio-email">
-                            Email
-                        </label>
-                        <label>
-                            <input type="radio" name="contacto" value="telefono" id="radio-telefono">
-                            Teléfono
-                        </label>
-                        <label>
-                            <input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>
-                            WhatsApp
-                        </label>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>¿En que horario prefiere ser atendido?</legend>
-                    <select id="miSelect">
-                        <option>Mañana</option>
-                        <option>Tarde</option>
-                        <option>Noche</option>
-                    </select>
-                </fieldset>
-                    <div class="checkbox-container">
-                        <input type="checkbox" checked id="miCheckbox" class="slider-checkbox">
-                        <label for="miCheckbox" class="slider-label"></label>
-                        <span class="checkbox-text">¿Le gustaría recibir novedades de Te Acompañe?</span>
-                    </div>
+    <main class="cuerpo-contact">
+        <!-- formulario -->
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="nombre"><span class="span-contact">*</span>Nombre</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Ejemplo: Nicolás">
             </div>
-        </main>
-    </div>
+            <div class="form-group">
+                <label for="apellido"><span class="span-contact">*</span>Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required placeholder="Ejemplo: Lama">
+            </div>
+            <div class="form-group">
+                <label for="email"><span class="span-contact">*</span>Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required placeholder="Ejemplo: nico@example.com">
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <!-- <input type="tel" id="telefono" name="telefono" placeholder="Ejemplo: 11-1234-1234"> -->
+                <input type="tel" id="telefono" required placeholder="Ejemplo: 11-1234-1234" oninput="formatoTelefono(this)">
+            </div>
+            <div class="form-group">
+                <label for="comentario"><span class="span-contact">*</span>Comentario:</label>
+                <textarea id="comentario" name="comentario" placeholder="Ejemplo: Hola, estoy interesado en..."
+                          rows="4"></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        <!-- checkbox -->
+        <div class="fiel">
+            <fieldset class="contact-method">
+                <legend>¿Cómo le gustaría que lo contactemos?</legend>
+                <div class="radio-container">
+                    <label>
+                        <input type="radio" name="contacto" value="email" id="radio-email">
+                        Email
+                    </label>
+                    <label>
+                        <input type="radio" name="contacto" value="telefono" id="radio-telefono">
+                        Teléfono
+                    </label>
+                    <label>
+                        <input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>
+                        WhatsApp
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>¿En que horario prefiere ser atendido?</legend>
+                <select id="miSelect">
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+            </fieldset>
+            <div class="checkbox-container">
+                <input type="checkbox" checked id="miCheckbox" class="slider-checkbox">
+                <label for="miCheckbox" class="slider-label"></label>
+                <span class="checkbox-text">¿Le gustaría recibir novedades de Te Acompañe?</span>
+            </div>
+        </div>
+    </main>
+</div>
 
 <footer>
     <ul>
-        <li><a>&copy; Te Acompaño,  2023</a></li>
+        <li><a>&copy; Te Acompaño, 2023</a></li>
         <li id="leyenda">"Un objetivo sin un plan es solo un deseo" Antoine de Saint-Exupéry</li>
         <li><a>Aviso legal</a></li>
     </ul>
 
 </footer>
-    <script src="script.js"></script>
+<script type="module" src="script.js"></script>
 </body>
 </html>
