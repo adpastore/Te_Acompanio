@@ -42,18 +42,21 @@ header {
     background-color: var(--color-barra);
     z-index: 999;
 }
-header ul,
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    place-content: space-between;
+    font-size: 0.9em;
+    margin-right: 0.1em;
+}
 footer ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     place-content: space-between;
-}
-
-header ul {
-    font-size: 0.9em;
-    margin-right: 0.1em;
 }
 
 /* Logo */
@@ -97,7 +100,6 @@ main {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: var(--color-page);
     color: var(--color-texto);
-    background-color: lightslategrey;
 }
 
 /* Pie de página */
@@ -134,7 +136,7 @@ footer {
 .banner {
     width: 100%;
     height: 3%;
-    margin-top: 5%;
+    margin-top: 4em;
 }
 
 .banner img {
@@ -153,8 +155,6 @@ a:hover {
 /* Navegación */
 nav a:hover {
     color: var(--color-let-nav);
-    /* color: #c78c19;
-       text-decoration: underline; */
 }
 
 /* Contenido principal */
@@ -172,8 +172,20 @@ margin-top: 3em;
     font-size: 1.1em;
 }
 
+.diferenciales {
+    padding: 3em 0;
+}
+
+.lista-diferenciales {
+    width: 74%;
+    margin: 0 auto;
+    vertical-align: top;
+    text-align: right;
+}
+
+
 .contenido-diferenciales {
-    width: 100%;
+    width: 75%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -212,25 +224,6 @@ em {
     text-align: center;
 }
 
-.diferenciales {
-    padding: 3em 0;
-}
-
-.contenido-diferenciales {
-    width: 75%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.lista-diferenciales {
-    width: 60%;
-    /*display: inline-block;*/
-    margin: 0 auto;
-    vertical-align: top;
-    text-align: right;
-}
-
 .items {
     line-height: 1.5;
     display: flex;
@@ -248,7 +241,7 @@ em {
 
 /* Efectos en imágenes */
 .imagen-diferenciales {
-    width: 27%;
+    width: 35%;
     float: center;
     transition: 0.4s;
     box-shadow: 10px 10px 25px 10px #000000;
@@ -464,7 +457,7 @@ blockquote {
 
 
 /* Pantalla de ancho máximo 320px */
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 320px){
     body, html {
         width: 100%;
         margin: 0;
@@ -473,7 +466,7 @@ blockquote {
     .banner {
         height: auto;
         width: 100%;
-        margin-top: 28%;
+        margin-top: 28% !important;
     }
 
     .logo {
@@ -498,10 +491,10 @@ blockquote {
         position: absolute;
         top: 0;
         right: 0;
-        margin-right: -15px;
-        line-height: 25px;
-        height: 100%;
-        width: 47%;
+        margin-right: 0px !important;
+        line-height: 20px !important;
+        height: 4em !important;
+        width: 47% !important;
         background: var(--color-barralateral);
         padding-top: 2.5em;
         padding-right: 1.5em;
@@ -519,7 +512,7 @@ blockquote {
     header div.contenedor nav ul li {
         display: block;
         text-align: left;
-        margin-top: 0.6em;
+        margin-top: 0.9em;
     }
 
     #menu {
@@ -539,7 +532,7 @@ blockquote {
         color: var(--color-let-nav);
         background: var(--color-texto);
     }
-
+    
     #menu-cerrar {
         display: none;
     }
@@ -550,6 +543,8 @@ blockquote {
 
     #menu-check:checked ~ nav {
         display: block;
+        width: 140px !important;
+        height: 4em;
     }
     #menu-check:checked ~ label #menu-abrir {
         display: none;
@@ -558,7 +553,11 @@ blockquote {
     #menu-check:checked ~ label #menu-cerrar {
         display: block;
     }
-
+    .menuCol {
+        font-size: 1.4em !important;
+        background-color: #BA9AC0;
+        width: 140px;
+    }
     .contenedor {
     padding: 1em;
     }
@@ -662,7 +661,7 @@ li  a{
 }
 
 /* Pantalla de ancho máximo 600px y mínimo 321px */
-@media only screen and (max-width: 600px) and (min-width: 321px) {
+@media only screen and (max-width: 600px) and (min-width: 350px){
     body, html {
         width: 100%;
         margin: 0;
@@ -675,10 +674,11 @@ li  a{
 
     #menu-check:checked ~ nav {
         display: block;
+        width: 132px;
     }
 
     .banner {
-        margin-top: 11%;
+        margin-top: 10% !important;
         max-width: 100%;
     }
 
@@ -724,12 +724,12 @@ li  a{
         height: 10px;
         position: relative;
     }
-
+    
     header div.contenedor nav {
         position: absolute;
         top: 0;
         right: 0;
-        margin-right: -27px;
+        margin-right: 1px;
         line-height: 25px;
         height: 100%;
         width: 28%;
@@ -740,7 +740,11 @@ li  a{
         color: var(--color-let-nav);
         z-index: 9999;
     }
-
+    header ul{
+        margin-top: 0.6em;
+        background: #BA9AC0 !important;
+        width: 140px;
+    }
     .contenedor {
         padding: 0.5em;
         width: 100%;
@@ -750,6 +754,7 @@ li  a{
     header div.contenedor nav ul li {
         color: var(--color-let-nav);
         background: #BA9AC0;
+        width: 131px;
     }
 
     header div.contenedor nav ul, header div.contenedor nav ul li {
@@ -851,17 +856,17 @@ li a{
 
 }
 
-@media only screen and (max-width: 770px) and (min-width: 601px)  {
+/* @media only screen and (max-width: 770px) and (min-width: 650px){
  .banner {
-        margin-top: 9%;
+        margin-top: 10.5% !important;
         max-width: 100%;
     }
 
-}
+} */
 
 
 /* Pantalla de ancho máximo 980px y mínimo 601px */
-@media screen and (max-width: 980px) and (min-width: 771px) {
+@media screen and (max-width: 980px) and (min-width: 800px){
     #menu-check:not(:checked) ~ nav {
         display: none;
     }
@@ -992,7 +997,7 @@ li a{
 
     .banner {
         width: 100%;
-        margin-top: 5%;
+        margin-top: 7%;
     }
 
     .productos li {

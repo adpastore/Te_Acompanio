@@ -17,12 +17,13 @@
 
 :root {
     /*color fondo de pagina*/
-    --color-page: #EDDCC1;
-    /*color fondo alternativo*/
+    --color-page: lightslategrey;
+    /* --color-page: #EDDCC1; */
+        /*color fondo alternativo*/
     --color-alt: light rgb(223, 184, 236);
     
     /*Color barra superior*/
-    --color-barra: rgba(248, 155, 248, 0.705);
+    --color-barra: #E1ABEB;
 
     /*Color de texto*/
 
@@ -43,6 +44,7 @@
 /*se ve fondo blanco y bordes del main*/
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* background-color: var(--color-page); */
     background-color: var(--color-page);
     color: var(--color-texto);
     margin: 0; 
@@ -75,8 +77,9 @@ body {
 }
 header {
     margin-top: 0;
-    position: static;
+    position: fixed;
     width: 100%;
+    z-index: 999;
 }
 .logo {
     display: flex;
@@ -124,7 +127,7 @@ header ul {
     background-color: lightslategrey;
     grid-gap: 3rem;
     padding: 3.3rem;
-    z-index: 555;
+    /* z-index: 555; */
 } 
 .main .cont1 {
     display: flex;
@@ -136,7 +139,8 @@ header ul {
     padding-top: 1em;
     padding-bottom: 1em;
     background-color:var(--color-barra);
-    z-index: 9998;
+    margin-top: 50px;
+    /* z-index: 9998; */
     
 
 }
@@ -150,7 +154,8 @@ header ul {
     padding-top: 1em;
     padding-bottom: 1em;
     background-color: var(--color-barra);
-    z-index: 9998;
+    margin-top: 50px;
+    /* z-index: 9998; */
 }
 .profesor {
     /* display:inline-block; */
@@ -320,7 +325,8 @@ li img {
     width: 100%;
     max-width: 1080;
     margin: 0 auto;
-    background-color:rgb(169, 212, 206);
+    background-color: var(--color-page);
+    /* background-color:rgb(169, 212, 206); */
 } 
 #menu, #menu-check {
     display: none;   
@@ -329,12 +335,7 @@ li img {
     
 
     @media only screen and (max-width: 600px) {
-            #menu-check:not(:checked) ~ nav {
-                display: none;
-            }
-            #menu-check:checked ~ nav {
-                display: block;
-            }
+            
             .logo {
 
                 height: 3em;
@@ -358,39 +359,57 @@ li img {
             #menu-cerrar {
                 display: none;
             }
-
+            #menu-check:not(:checked) ~ nav {
+                display: none;
+            }
+            #menu-check:checked ~ nav {
+                display: block;
+                width: 132px;
+            }
             #menu-check:checked ~ label #menu-abrir {
                 display: none;
             }
             #menu-check:checked ~ label #menu-cerrar {
                 display: block;
             }
-
+            header {
+                margin-top: 0px;
+                position: fixed;
+                width: 100%;
+                z-index: 999;
+            }
             header div.contenedor nav {
                 position: absolute;
                 top: 0;
                 right: 0;
+                margin-right: 1px;
+                line-height: 25px;
                 height: 100%;
-                width: 25%;
-                background-color: var(--color-barralateral);
+                width: 28%;
+                background: var(--color-barralateral);
                 padding-top: 2.5em;
                 padding-right: 1.5em;
                 opacity: 1;
-                color:var(--color-let-nav);
+                color: var(--color-let-nav);
                 z-index: 9999;
-            }
-            .contenedor {
-                padding: .5em;
             }
             header div.contenedor nav ul li {
                 color:var(--color-let-nav);
-                background: none;
+                background: #BA9AC0;
             }
             header div.contenedor nav ul, header div.contenedor nav ul li {
                 display: block;
                 text-align: left;
                 margin-top: .6em;
             
+            }
+            header ul{
+                margin-top: 0.6em;
+                background: #BA9AC0 !important;
+                width: 140px;
+            }
+            .contenedor {
+                padding: .5em;
             }
             nav a.actual:hover {
                 color:var(--color-let-nav);
@@ -405,7 +424,13 @@ li img {
                 margin-right: .5em;
                 
             }
-
+            li  a{
+                font-size: 1.6em;
+                }
+            a.actual {
+                font-weight: bold;
+                color: black;
+            }
             .main {
                 grid-template-columns: 1fr;
             }
@@ -420,6 +445,20 @@ li img {
                     max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
                     height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
             }
+            .noscont{
+                margin-top: 90px !important;
+              }
+            blockquote {
+                display: block;
+                text-align: center;
+                margin-top: 2px;
+            }
+            .tarjeta:hover{
+                animation: changeColor 5s ease infinite;
+                transition-duration: 2s;
+                transform: scale(1.1);
+                background-color: #EDDCC1;
+              }
             
 
     }
@@ -444,11 +483,26 @@ li img {
         #leyenda {
             display: none;
         }
+        blockquote {
+            display: block;
+            text-align: center;
+            margin-top: 2px;
+        }
+    }
+    .noscont{
+      margin-top: 75px;
+    }
         .nosotros {
             display: grid;
             grid-template-columns: 1fr 1fr;
 
         }
+        .tarjeta:hover{
+            animation: changeColor 5s ease infinite;
+            transition-duration: 2s;
+            transform: scale(1.1);
+            background-color: #EDDCC1;
+          }
     }
 }
 
@@ -489,9 +543,12 @@ blockquote {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
-    margin-top: 3em;
+    margin-top: 0;
     margin-bottom: 1em;
 
+  }
+  .noscont{
+    margin-top: 55px;
   }
   /* .nosotros .tarjeta img {
     width:250px;
@@ -499,15 +556,23 @@ blockquote {
     border-radius: 10em; */
 
     .tarjeta {
+        width: 80%;
+        margin: auto;
         border: 1px solid #ccc;
         text-align: center;
         padding: 20px;
-        border-radius: 15em;
+        border-radius: 6em;
       }
       .tarjeta img {
         max-width: 100%;
         height: auto;
         border-radius: 12em;
+      }
+      .tarjeta:hover{
+        animation: changeColor 5s ease infinite;
+        transition-duration: 2s;
+        transform: scale(1.1);
+        background-color: #EDDCC1;
       }
 
 
