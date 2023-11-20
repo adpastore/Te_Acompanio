@@ -1,9 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById('contact-form');
-    const messageContainer = document.getElementById('message-container');
-    const countDownContainer = document.getElementById('countdown-container');
 
-    function validarNombreApellido(input){
+    function validarNombreApellido(input) {
         const regex = /^[a-zA-Z\s]+$/;
         return regex.test(input.value);
     }
@@ -29,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const inputTelefono = document.getElementById('telefono');
-    inputTelefono.addEventListener('input', function() {
+    inputTelefono.addEventListener('input', function () {
         formatoTelefono(inputTelefono);
     });
 
@@ -43,32 +41,21 @@ document.addEventListener("DOMContentLoaded", function () {
         const apellidoInput = document.getElementById('apellido');
         const telefonoInput = document.getElementById('telefono');
 
-        formatoTelefono(telefonoInput); // Formatea el teléfono antes de la validación
+        formatoTelefono(telefonoInput);
 
-        if (!validarNombreApellido(nombreInput)) {
-            alert('Por favor, ingrese datos válidos en el nombre.');
-            event.preventDefault();
-            return;
-        }
-        if (!validarNombreApellido(apellidoInput)) {
-            alert('Por favor, ingrese datos válidos en el apellido.');
-            event.preventDefault();
-            return;
-        }
-        if (!validarTelefono(telefonoInput)) {
-            alert('Por favor, ingrese datos válidos como teléfono.');
+        if (!validarNombreApellido(nombreInput) || !validarNombreApellido(apellidoInput) || !validarTelefono(telefonoInput)) {
+            alert('Por favor, ingrese datos válidos en los campos requeridos.');
             event.preventDefault();
             return;
         }
 
-        alert('Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.');
-        form.reset();
+        alert('¡Gracias!\nEl formulario ha sido enviado con éxito.');
+        form.reset(); // Reinicia el formulario y borra los datos
+
         setTimeout(function () {
-            alert('Mensaje entregado con éxito. Nos pondremos en contacto contigo pronto.');
-        }, 4000);
-    });
-    // Agregar evento de clic al botón de enviar
-    document.getElementById('submit').addEventListener('click', function () {
-        document.getElementById('contact-form').submit();
+            window.location.href = "https://adpastore.github.io/Te_Acompanio/contacto.html";
+        }, 3000);
+
+        event.preventDefault(); // Evita el envío automático del formulario
     });
 });
