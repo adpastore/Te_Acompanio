@@ -67,4 +67,8 @@ document.addEventListener("DOMContentLoaded", function () {
             alert('Mensaje entregado con éxito. Nos pondremos en contacto contigo pronto.');
         }, 4000);
     });
+    // Agregar evento de clic al botón de enviar
+    document.getElementById('submitBtn').addEventListener('click', function () {
+        document.getElementById('contact-form').submit();
+    });
 });
