@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 4000);
     });
     // Agregar evento de clic al botón de enviar
-    document.getElementById('submitBtn').addEventListener('click', function () {
+    document.getElementById('submit').addEventListener('click', function () {
         document.getElementById('contact-form').submit();
     });
 });
