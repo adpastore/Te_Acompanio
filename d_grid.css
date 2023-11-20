@@ -433,6 +433,10 @@ li img {
             }
             .main {
                 grid-template-columns: 1fr;
+                padding: 1.3rem;
+            }
+            .main .cont1{
+                margin-top: 4rem;
             }
             .cont1, .cont2 {
                 display:block;
