@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
         if (!validarTelefono(telefonoInput)) {
-            alert('Por favor, ingrese un telefono correctamente.');
+            alert('Por favor, ingrese un teléfono correctamente.');
             event.preventDefault();
             return;
         }
