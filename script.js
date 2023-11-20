@@ -43,12 +43,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
         formatoTelefono(telefonoInput);
 
-        if (!validarNombreApellido(nombreInput) || !validarNombreApellido(apellidoInput) || !validarTelefono(telefonoInput)) {
-            alert('Por favor, ingrese datos válidos en los campos requeridos.');
+        if (!validarNombreApellido(nombreInput)) {
+            alert('Por favor, ingrese un nombre correcto sin acentos o caracteres especiales.');
             event.preventDefault();
             return;
         }
-
+        if (!validarNombreApellido(apellidoInput)) {
+            alert('Por favor, ingrese un apellido correcto sin acentos o caracteres especiales.');
+            event.preventDefault();
+            return;
+        }
+        if (!validarTelefono(telefonoInput)) {
+            alert('Por favor, ingrese un telefono correctamente.');
+            event.preventDefault();
+            return;
+        }
         alert('¡Gracias!\nEl formulario ha sido enviado con éxito.');
         form.reset(); // Reinicia el formulario y borra los datos
 
