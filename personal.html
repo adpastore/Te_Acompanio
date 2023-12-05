@@ -1,36 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initialscale=1.0">
-    <title>Ejemplo de uso de la API</title>
+    <!--meta de adaptacion a celulares-->
+    <meta name="viewport" content="width=device-width">
+    <title>Te Acompaño...</title>
+    <!--Reseteo de estilos predefinidos -->
+    <link rel="stylesheet" href="static/css/reset.css">
+    <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="static/css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <link rel="icon" href="imagenes1/favicon.png" type="image/x-icon">
+<!--    <script src="prefixfree.min.js"></script>-->
 </head>
+
 <body>
-    <h1>Ejemplos de uso de la API</h1>
-    <h3>Codo a Codo 2023</h3>
-    <table>
-        <tr>
-            <td class="contenedor-centrado">
-            <a href="altas.html">Alta de productos</a>
-            </td>
-        </tr>
-        <tr>
-            <td class="contenedor-centrado">
-            <a href="listado.html">Listado de productos</a>
-            </td>
-        </tr>
-        <tr>
-            <td class="contenedor-centrado">
-            <a href="modificaciones.html">Modificar datos de
-            productos</a>
-            </td>
-        </tr>
-        <tr>
-            <td class="contenedor-centrado">
-            <a href="eliminar.html">Eliminar productos</a>
-            </td>
-        </tr>
-    </table>
+<div class="grid-container">
+
+    <header class="header">
+
+        <div class="contenedor">
+            <div>
+                <a class="logo">
+                    <img src="imagenes1/Logo.png" alt="Logo Te Acompaño" class="src">
+                    <p>Te acompaño...</p>
+                </a>
+            </div>
+            <input type="checkbox" id="menu-check">
+            <label id="menu" for="menu-check">
+                <span id="menu-abrir">&#9776;</span>
+                <span id="menu-cerrar">X</span>
+            </label>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="porque.html">Por que...</a></li>
+                    <li><a href="colaboradores.html">Colaboradores</a></li>
+                    <li><a href="contacto.html">Contactenos</a></li>
+                    <li><a href="#" class="actual">Personal</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</div>
+
+<div class="container-contacto">
+    <main class="cuerpo-contacto">
+        <h1>Ejemplos la API</h1>
+        <h3>Codo a codo2023</h3>
+
+           <div class="form-group"></div>
+
+           <table>
+
+            <caption class="captiontitulo">Pagina de administración de personal</caption>
+                <tbody>
+            <tr>
+                    <td class="form-groupo">
+                        <a class="text-groupo" href="altas.html">Alta de Profesores</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="form-groupo">
+                        <a class="text-groupo"  href="listado.html">Listar Profesores</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="form-groupo">
+                        <a class="text-groupo"  href="modificaciones.html">Modificar datos de Profesores</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="form-groupo">
+                        <a class="text-groupo"  href="listadoEliminar.html">Eliminar Profesores</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="contenedor-centrado">
+                <a class="contenedor-texto-centrado" href="personal.html">Menu principal</a>
+            </div>
+    </main>
+</div>
+
+<footer>
+    <ul>
+        <li><a>&copy; Te Acompaño, 2023</a></li>
+        <li id="leyenda">"Un objetivo sin un plan es solo un deseo" Antoine de Saint-Exupéry</li>
+        <li><a>Aviso legal</a></li>
+    </ul>
+
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
