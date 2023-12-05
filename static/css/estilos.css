@@ -1,0 +1,119 @@
+
+.contenedor-centrado {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.cuerpo-contacto{
+    height: 38em;
+}
+
+h1,
+h3
+{
+    text-align: center;
+    color: #007bff;
+    
+}
+.contenedor-centrado {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.contenedor-texto-centrado{
+    padding: 20px;
+    color: black;
+    font-size: 1.5em;
+    background-color:#007bff;
+    display: flex !important;
+    justify-content: center !important;
+}
+.text-groupo{
+    color: black;
+    background-color: #4CAF50;
+    align-items: center !important;
+    display: flex !important;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+.captiontitulo{
+    padding: 10px;
+    font-size: 2em;
+}
+.form-groupo{
+    padding: 20px;
+    background-color: #4CAF50;
+    color: black;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+}
+/* form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+} */
+
+table {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+button {
+    padding: 8px;
+    margin: 4px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+a.actual {
+    font-weight: bold;
+}
+
+nav a.actual:hover{
+    color:var(--color-texto);
+}
+nav a:hover {
+    color: var(--color-let-nav);
+}
