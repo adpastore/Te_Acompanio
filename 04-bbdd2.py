@@ -135,6 +135,7 @@ def agregar_producto():
     nombre_base, extension = os.path.splitext(nombre_imagen)
     nombre_imagen = f"{nombre_base}_{int(time.time())}{extension}"
     imagen.save(os.path.join(ruta_destino, nombre_imagen))
+
     if catalogo.agregar_producto(codigo, descripcion, cantidad, precio,
     nombre_imagen, proveedor):
         return jsonify({"mensaje": "Producto agregado"}), 201
