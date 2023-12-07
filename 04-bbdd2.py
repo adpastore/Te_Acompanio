@@ -100,13 +100,13 @@ class Catalogo:
 # Cuerpo del programa
 #--------------------------------------------------------------------
 # Crear una instancia de la clase Catalogo
-#catalogo = Catalogo(host='localhost', user='root', password='',
-#database='miapp')
-catalogo = Catalogo(host='carlosrosselli.mysql.pythonanywhere-services.com', user='carlosrosselli', password='Grupo#12python',
-database='carlosrosselli$miapp')
+catalogo = Catalogo(host='localhost', user='root', password='',
+database='miapp')
+#catalogo = Catalogo(host='carlosrosselli.mysql.pythonanywhere-services.com', user='carlosrosselli', password='Grupo#12python',
+#database='carlosrosselli$miapp')
 # Carpeta para guardar las imagenes
-#ruta_destino = 'static/img/'
-ruta_destino = 'https://www.pythonanywhere.com/user/carlosrosselli/files/home/carlosrosselli/mysite/static/img/'
+ruta_destino = 'static/img/'
+#ruta_destino = 'https://www.pythonanywhere.com/user/carlosrosselli/files/home/carlosrosselli/mysite/static/img/'
 #--------------------------------------------------------------------
 @app.route("/productos", methods=["GET"])
 def listar_productos():

@@ -1,4 +1,5 @@
-const URL = "https://carlosrosselli.pythonanywhere.com/"
+//const URL = "https://carlosrosselli.pythonanywhere.com/"
+const URL = "http://127.0.0.1:5000/"
 // Realizamos la solicitud GET al servidor para obtener todos los productos
     fetch(URL + 'productos')
         .then(function (response) {
